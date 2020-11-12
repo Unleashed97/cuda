@@ -1,0 +1,111 @@
+// out: style.css, compress: true
+
+*, *:before, *:after{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 1130px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+body{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 15px;
+    color: black;
+    margin: 0;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+// text aling center block
+.text-center
+{
+    width: 100%;
+    text-align: center;
+}
+
+.button{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+
+    outline: none;
+    border: 0;
+    padding: 20px 80px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    transition: background .2s linear;
+
+    
+    &--orange{
+        background-color: #eb7d4b;
+
+        &:hover{
+            background-color: #c86a40;
+        }
+    }
+
+    &--green{
+        background-color: #17c2a4;
+        margin-top: 20px;
+
+        &:hover{
+            background-color: #14a58c;
+        }
+    }
+
+    &--blue{
+        background-color: #30bae7;
+        margin-top: 60px;
+
+        &:hover{
+            background-color: #299ec5;
+        }
+    }
+
+    @media @mobile{
+        padding: 15px 60px;
+        font-size: 16px;
+    }
+
+}
+
+// stop-scroll for body(burger menu)
+.stop-scroll{
+    overflow: hidden;
+}
+
+// VARS
+@import "vars";
+
+
+// Components
+
+@import "components/header";
+@import "components/nav";
+@import "components/nav-toggle";
+@import "components/intro";
+@import "components/section";
+@import "components/s-item";
+@import "components/graph";
+@import "components/nav-portfolio";
+@import "components/reviews";
+@import "components/form";
+@import "components/footer";

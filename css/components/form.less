@@ -1,0 +1,59 @@
+// main: ../main.less
+
+.form{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 860px;
+    margin: 0 auto;
+    & input, textarea{
+        background-color: #273a71;
+        border: 1px solid #273a71;
+        padding: 18px 23px;
+        border-radius: 5px;
+        outline: none;
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 18px;
+        color: #fff;
+
+        transition: border .2s linear;
+
+        &:focus{
+            border: 1px solid #30bae7;
+        }
+        &::placeholder{
+            font-family: 'Titillium Web', sans-serif;
+            font-size: 18px;
+            color: #fff;
+        }
+    }
+
+    & input{
+        width: 48%;
+    }
+
+
+    & textarea{
+        width: 100%;
+        min-height: 200px;
+        margin-top: 22px;
+        resize: none;
+    }
+
+    // MEDIA
+    @media @laptop{
+
+    }
+
+    @media @tablet{
+        & input{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        & textarea{
+            margin-top: 0;
+        }
+    }
+}

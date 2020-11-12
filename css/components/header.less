@@ -1,0 +1,55 @@
+// main: ../main.less
+
+.header{
+    padding: 45px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+
+    background-color: #87509c;
+
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo{
+        font-family: 'Pacifico', cursive;
+        font-size: 40px;
+        font-weight: 700;
+        color: #fff;
+    }
+
+
+
+
+    // MEDIA
+    @media @laptop{
+        padding: 40px 20px;
+    }
+
+    @media @tablet{
+        padding: 0;
+        max-height: 70px;
+        
+        &__logo{
+            font-size: 40px;
+        }
+    }
+
+    // @media @tablet and @mobileRotatedHeight{
+
+    // }
+
+    @media @mobile{
+        padding: 0;
+        max-height: 50px;
+        
+        &__logo{
+            font-size: 30px;
+        }
+    }
+}

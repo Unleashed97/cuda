@@ -1,0 +1,105 @@
+// main: ../main.less
+
+.section{
+    padding: 110px 0;
+    background-color: #17c2a4;
+    color: #fff;
+
+    &--team{
+        background-color: #e7f1f8;
+        color: #3c4761;
+    }
+
+    &--skill{
+        background-color: #fff;
+        color: #3c4761;
+    }
+
+    &--portfolio{
+        background-color: #ffdd99;
+        color: #393939;
+    }
+
+    &--about{
+        background-color: #d74680;
+        padding: 110px 0 0 0;
+    }
+
+    &--contact{
+        background-color: #3c5499;
+
+        .section__header{
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+
+    &__header{
+        width: 100%;
+        max-width: 610px;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 70px;
+    }
+
+    &__title{
+        font-size: 40px;
+        font-weight: 700;
+        text-transform: uppercase;
+
+        position: relative;
+        margin-bottom: 50px;
+
+        &::after{
+            position: absolute;
+            display: block;
+            content: '';
+            width: 10%;
+            height: 3px;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #c8d9e5;
+            opacity: .25;
+        }
+    }
+
+    &__subtitle{
+        font-size: 18px;
+    }
+
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    // MEDIA
+    @media @laptop{
+        padding: 90px 0;
+
+        &__title{
+            font-size: 38px;
+            margin-bottom: 45px;
+        }
+    }
+
+    @media @tablet{
+        padding: 90px 0;
+
+        &__title{
+            font-size: 38px;
+            margin-bottom: 45px;
+        }
+    }
+
+    @media @mobile{
+        padding: 60px 0;
+
+        &__title{
+            font-size: 30px;
+            margin-bottom: 35px;
+        }
+    }
+}

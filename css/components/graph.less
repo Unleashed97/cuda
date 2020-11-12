@@ -1,0 +1,47 @@
+// main: ../main.less
+
+.graph{
+    &__circle{
+        position: relative;
+        margin-bottom: 20px;
+        &:before{
+            display: block;
+            content: '';
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            border: 15px solid #30bae7;
+            
+            margin: 0 auto;
+        }
+
+        &--purple{
+            &:before{
+                border: 15px solid #d74680;
+            }
+        }
+        &--green{
+            &:before{
+                border: 15px solid #15c7a8;
+            }
+        }
+        &--orange{
+            &:before{
+                border: 15px solid #eb7d4b;
+            }
+        }
+    }
+
+    &__count{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        font-weight: 300;
+        font-size: 32px;
+
+        span{
+            font-size: 46px;
+        }
+    }
+}

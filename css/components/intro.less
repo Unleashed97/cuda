@@ -1,0 +1,53 @@
+// main: ../main.less
+
+.intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #87509c;
+    min-height: 595px;
+
+    &__inner{
+        max-width: 910px;
+        text-align: center;
+    }
+
+    &__title{
+        font-size: 42px;
+        font-weight: 700;
+        color: #fff;
+        line-height: 1.2;
+
+        margin-bottom: 60px;
+    }
+
+    // MEDIA
+    @media @laptop{
+
+        &__title{
+            font-size: 39px; 
+        }
+    }
+
+    @media @tablet{
+
+        &__title{
+            font-size: 35px;
+        }
+    }
+
+    @media @mobile{
+
+        &__title{
+            font-size: 28px;
+        }
+    }
+
+    @media @mobile-sm{
+
+        &__title{
+            font-size: 22px;
+        }
+    }
+}

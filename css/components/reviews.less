@@ -1,0 +1,99 @@
+// main: ../main.less
+
+.reviews{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__item{
+        width: 47%;
+        min-height: 220px;
+        padding-left: 145px;
+        margin: 0 20px 130px 0;
+        position: relative;
+    }
+
+    &__img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        img{
+            border-radius: 50%;
+        }
+    }
+
+    &__text{
+        font-size: 21px;
+        font-style: italic;
+        margin-bottom: 20px;
+    }
+
+    &__author{
+        position: absolute;
+        bottom: 0;
+        left: 145px;
+    }
+
+    &__title{
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    &__subtitle{
+        color: #fac996;
+        font-size: 18px;
+    }
+
+    // MEDIA
+    @media @desktop{
+        &__item{
+            padding-left: 120px;
+
+        }
+
+        &__author{
+            left: 120px;
+        }
+    }
+
+    @media @laptop{
+        &__item{
+            width: 100%;
+            max-width: 740px;
+            min-height: auto;
+            margin: 0 auto;
+            margin-bottom: 60px;
+        }
+
+        &__author{
+            position: initial;
+        }
+    }
+
+    @media @mobile{
+
+        &__item{
+            padding-left: 0;
+        }
+
+        &__img{
+            position: initial;
+            margin-bottom: 40px;
+
+            img{
+                margin: 0 auto;
+                transform: scale(1.5);
+            }
+        }
+
+        &__text{
+            text-align: center;
+        }
+
+        &__author{
+            position: initial;
+            text-align: center;
+        }
+    }
+}
