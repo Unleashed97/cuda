@@ -1,0 +1,69 @@
+// main: ../main.less
+
+.header{
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+
+    background-color: #87509c;
+
+    &__inner{
+        height: 160px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: height .5s linear;
+
+        &.shrink{
+            height: 80px;
+        }
+    }
+
+    &__logo{
+        font-family: 'Pacifico', cursive;
+        font-size: 40px;
+        font-weight: 700;
+        color: #fff;
+    }
+
+    // MEDIA
+    @media @laptop{
+        &__inner{
+            height: 120px;
+            &.shrink{
+                height: 80px;
+            }
+        }
+    }
+
+    @media @tablet{
+        &__logo{
+            font-size: 30px;
+        }
+        &__inner{
+            height: 70px;
+        }
+    }
+
+    @media @mobile{
+        &__logo{
+            font-size: 25px;
+        }
+        &__inner{
+            height: 60px;
+
+        }
+    }
+    @media @mobile-sm{
+        &__logo{
+            font-size: 25px;
+        }
+        &__inner{
+            height: 40px;
+
+        }
+    }
+}
