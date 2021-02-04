@@ -5,10 +5,7 @@ let menuToggle = () =>{
     btnToggle.addEventListener('click', () => {
         btnToggle.classList.toggle('active');
         menu.classList.toggle('active');
-        // document.body.classList.toggle('stop-scroll');
+        document.body.classList.toggle('stop-scroll');
     });
 }
-
-
-
 menuToggle();

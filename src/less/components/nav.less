@@ -1,9 +1,9 @@
-// main: ../main.less
-
 .nav{
-    display: flex;
-
     
+    &__inner{
+        display: flex;
+    }
+
     &__link{
         padding: 5px 15px;
         text-decoration: none;  
@@ -72,14 +72,13 @@
             margin-bottom: 20px;
 
             font-size: 35px;
+            // font-size: 20px;
         }
 
         &.active{
-            // height: calc(100vh - 50px);
             height: 100vh;
 
         }
-
     }
 
     @media @mobile{
