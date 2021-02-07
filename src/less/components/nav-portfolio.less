@@ -2,6 +2,35 @@
     // margin: 0 auto;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 40px;
+
+    &__link{
+        padding: 5px 15px;
+        margin-right: 15px;
+        border-radius: 5px;
+        font-size: 18px;
+        color: #393939;
+        text-align: center;
+        text-decoration: none;
+        background-color: #ebc985;
+        transition: background .2s linear;
+        
+        &:last-child{
+            margin-right: 0;
+        }
+        &:hover{
+            background-color: #fff;
+        }
+    }
+
+    // MEDIA
+    @media @mobile-sm{
+        &__link{
+            width: 60%;
+            margin-right: 0;
+            margin-bottom: 15px;
+        }
+    }
 }
