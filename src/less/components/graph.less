@@ -1,32 +1,39 @@
 .graph{
-    &__circle{
-        position: relative;
-        margin-bottom: 20px;
-        &:before{
-            display: block;
-            content: '';
-            width: 130px;
-            height: 130px;
-            border-radius: 50%;
-            border: 15px solid #30bae7;
-            
-            margin: 0 auto;
-        }
+    position: relative;
+    svg{
+        width: 160px;
+        height: 160px;
+    }
+
+    &__bg{
+        fill: transparent;
+        stroke-width: 13px;
+        stroke: #DFE8ED;
+    }
+    &__progress{
+        fill: transparent;
+        stroke-width: 13px;
+        stroke: blue;
+        stroke-linecap: round;
+        stroke-dasharray: 452.16;
+        // stroke-dashoffset: 60;
+        transform: rotate(-90deg);
+        transform-origin: 50% 50%;
+        
+
+        // &.active{
+        //     animation: progress 1.5s ease-in-out;
+        // }
 
         &--purple{
-            &:before{
-                border: 15px solid #d74680;
-            }
+            stroke: #d74680;
         }
         &--green{
-            &:before{
-                border: 15px solid #15c7a8;
-            }
+            stroke: #15c7a8;
         }
-        &--orange{
-            &:before{
-                border: 15px solid #eb7d4b;
-            }
+    
+        &--orange{ 
+            stroke:#eb7d4b;
         }
     }
 
@@ -36,11 +43,20 @@
         left: 50%;
         transform: translate3d(-50%, -50%, 0);
         font-weight: 300;
-        font-size: 32px;
-
+        font-size: 46px;
         span{
-            font-size: 46px;
+            font-size: 32px;
         }
     }
+
+    // @keyframes progress{
+    //     0%{
+    //         stroke-dashoffset: 452.16;
+    //     }
+
+    //     100%{
+    //         stroke-dashoffset: 113.04;
+    //     }
+    // }
     
 }
