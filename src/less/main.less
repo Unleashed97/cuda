@@ -91,12 +91,20 @@ img{
 }
 
 // stop-scroll for body(burger menu)
+// with scrollbar displays
 .stop-scroll{
+    overflow-y: scroll;
+    position: fixed;
+}
+
+//stop scroll and hide scrollbar
+.no-scroll{
     overflow: hidden;
 }
 
 
 // Components
+@import "components/preloader";
 @import "components/header";
 @import "components/nav";
 @import "components/nav-toggle";

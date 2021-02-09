@@ -1,0 +1,29 @@
+.preloader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    &.fadeout{
+        animation: fadeout .5s ease-in-out;
+    }
+
+    background-color: white;
+    &__image{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@keyframes fadeout{
+    0%{
+        opacity: 1;
+    }
+    90%{
+        opacity: .5;
+    }
+}
