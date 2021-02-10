@@ -10,7 +10,6 @@ const preloader = () =>{
         }, 500)
         document.body.classList.remove('stop-scroll');
     }, 1000)
-
 }
 
 preloader();
