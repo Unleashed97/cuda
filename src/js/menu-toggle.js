@@ -6,7 +6,7 @@ let menuToggle = () =>{
     btnToggle.addEventListener('click', () => {
         btnToggle.classList.toggle('active');
         menu.classList.toggle('active');
-        document.body.classList.toggle('stop-scroll');
+        document.body.classList.toggle('no-scroll');
     });
 
     navLinks.forEach(item =>{
@@ -17,7 +17,7 @@ let menuToggle = () =>{
             item.classList.add('active');
             btnToggle.classList.remove('active');
             menu.classList.remove('active');
-            document.body.classList.remove('stop-scroll')
+            document.body.classList.remove('no-scroll')
         })
     })
 }
